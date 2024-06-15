@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Templates</h2>
+            <ul id="template-list">
+                <li><a href="#" data-template="template-1">Template 1</a></li>
+                <li><a href="#" data-template="template-2">Template 2</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <form id="resume-form">
+                <h2>Personal Information</h2>
+                <input type="text" id="name" placeholder="Full Name">
+                <input type="email" id="email" placeholder="Email">
+                <input type="tel" id="phone" placeholder="Phone">
+                
+                <h2>Education</h2>
+                <div class="education-item">
+                    <input type="text" class="institution" placeholder="Institution">
+                    <input type="text" class="degree" placeholder="Degree">
+                    <input type="text" class="year" placeholder="Year">
+                </div>
+                <!-- Add more education items dynamically with JavaScript -->
+                <button type="button" id="add-education">Add Education</button>
+
+                <h2>Work Experience</h2>
+                <div class="experience-item">
+                    <input type="text" class="company" placeholder="Company">
+                    <input type="text" class="job-title" placeholder="Job Title">
+                    <textarea class="experience-description" placeholder="Description"></textarea>
+                </div>
+                <!-- Add more work experience items dynamically with JavaScript -->
+                <button type="button" id="add-experience">Add Experience</button>
+
+                <button type="button" id="preview-button">Preview</button>
+            </form>
+            <div id="preview" class="template">
+                <!-- Preview content goes here -->
+            </div>
+            <button id="download-button">Download Resume</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
